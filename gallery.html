@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>GALLERY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gallery.css">
+<script src="modal.js"></script>
+<link rel="icon" href="media/favicon.ico">
+<header>
+<img src="media/title_gallery.png" class="center" alt="logo">
+</header>
+
+<body>
+	<div class="nav">
+		<a href="index.html">HOME</a>
+		<a href="story.html">STORY</a>
+		<a href="gallery.html">GALLERY</a>
+		<a href="servant.html">SERVANT</a>
+		<a href="game.html">GAME PLAY</a>
+	</div>
+
+	<div class="row"> 
+		<div class="column side">
+		</div>
+  
+		<div class="column middle">
+			<div class="container" style="padding-top:6%">
+				<h3>FGO FGO Trailer: Opening Theme</h3>
+				<video   height="auto" width="99%" controls autoplay muted loop>
+				<source src="media/fgo cm.mp4" type="video/mp4">
+				</video><br>
+				<p>Commercial advertisement, gameplay dramatization</p>
+			</div>
+
+			<div class="container">
+				<img src="media/G_06_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				<img src="media/G_04_thumb.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				<img src="media/G_05_thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				<img src="media/G_05_thumb.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				<img src="media/G_09_thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+				<img src="media/G_07_thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+				<img src="media/G_08_thumb.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+				<img src="media/G_03_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+				<img src="media/G_02_thumb.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			</div>
+		</div>
+	
+		<div class="column side">
+		</div>
+	</div>
+	
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+		<div class="mySlides">
+			<div class="numbertext">1 / 9</div>
+			<img src="media/G_06.png" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">2 / 9</div>
+			<img src="media/G_04.png" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">3 / 9</div>
+			<img src="media/G_05.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">4 / 9</div>
+			<img src="media/G_05.png" style="width:100%">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">5 / 9</div>
+			<img src="media/G_09.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">6 / 9</div>
+			<img src="media/G_07.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides">
+			<div class="numbertext">7 / 9</div>
+			<img src="media/G_08.png" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">8 / 9</div>
+			<img src="media/G_03.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">9 / 9</div>
+			<img src="media/G_02.png" style="width:100%">
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+<footer>
+</footer>
+</body>
+</html>
